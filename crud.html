@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="shortcut icon" href="/img/Icono_Pestaña.png">
+    <title>Crud-Lista</title>
+</head>
+<body class="numero4">
+    <header>
+        <ul class="nav">
+            <a href="index.html"><img src="/img/Regresar.png" class=" b0"></a>
+        </ul>
+   </header>
+   <main class="main-content">
+        <div class="crud-container">
+            <div class="crud-header">
+                <h1>Tareas CRUD</h1>
+                <button class="button is-danger" id="openRegisterModal" onclick="modal()"> + Guardar Tarea</button>
+                
+            </div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Nombre</th>
+                      <th>Correo Eléctronico</th>
+                      <th>Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Felipe</td>
+                    <td>felip30400@gmail.com</td>
+                    <td>
+                        <button class="button is-primary">Editar Tarea</button>
+                        <button class="button is-info">Borrar Tarea</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+   </main>
+
+   <div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Agregar nueva tarea</p>
+        <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+      </header>
+      <section class="modal-card-body">
+        <form id="register-form">
+
+        </form>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+      </footer>
+    </div>
+  </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
